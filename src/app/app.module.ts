@@ -20,7 +20,6 @@ import { HomeModule } from './home/home.module';
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
-    CardVideoModule,
     HomeModule
 
   ],

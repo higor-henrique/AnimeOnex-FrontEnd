@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Episodio } from 'src/app/models/episodio.model';
 
 @Component({
   selector: 'app-card-video',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-video.component.css']
 })
 export class CardVideoComponent implements OnInit {
-
+  
+  @Input() episodio : Episodio;
+  
   constructor() { }
 
   ngOnInit(): void {
