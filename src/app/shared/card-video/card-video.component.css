@@ -1,0 +1,19 @@
+
+.card-video {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
+    
+    align-content: center;
+    align-items: center;
+    
+    }
+    
+    h5 {
+    color: #707070;
+    font-size: 0.75em;
+    }
+    
+    
+
+

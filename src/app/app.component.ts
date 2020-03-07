@@ -8,3 +8,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ANIMEONEXSITE';
 }
+
+
+
+// ngOnInit(): void {
+
+
+//   this.carregarAnime();
+//   console.log(this.animes);
+//   console.log("rte");
+// }
+// carregarAnime() {
+//   this.animeService.get()
+//   .subscribe(response => {
+//     this.animes = response;
+//   });
+
+// }
+
+
