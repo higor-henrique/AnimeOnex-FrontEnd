@@ -1,19 +1,121 @@
 
-.card-video {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 10px;
+.container-card {  
+    display: block;    
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;        
+    column-gap: 10px; 
+    align-items: flex-end;
+    margin: 10px;
+}
+.card-imagem {
     
-    align-content: center;
+    width: 400px;  
+    border-radius: 10px;
+    height: 250px; 
+    display: flex;
+    justify-content: center;
     align-items: center;
-    
-    }
-    
-    h5 {
-    color: #707070;
-    font-size: 0.75em;
-    }
-    
-    
+
+}
+
+.container-titulo {
+    font-family: Robot, Sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.card-imagem img {
+    border-radius: 20px;
+}
+h5 {
+    position: fixed ;
+    align-self: flex-start;
+    color: #822bab;
+}  
+
+h4 {
+    color: #822bab;
+} 
+
+  /*
+    .card-pesquisa-wrapper {
+      background: #ecf0f1;
+      border-radius: 4px;
+
+      padding: 0.5em;
+      margin: 0.5em;
+
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.15);
+      }
+
+      display: grid;
+
+      grid-template-rows: 2fr 3fr auto auto;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1em;
+      row-gap: 1em;
+
+      grid-template-areas:
+        "titulo titulo"
+        "descricao descricao"
+        "categoria data"
+        "bt bt";
+    */
+      /* .titulo-episodio
+      {
+         overflow-wrap: break-word; 
+      } */
+/* 
+      .titulo-episodio {
+          grid-area: titulo;  
+
+         font-size: 1.5em; 
+
+        margin: 0.125em 0;
+      } */
+
+      /* .descricao-pesquisa {
+        grid-area: descricao;
+
+        font-size: 0.9em;
+      }
+     */
+      /* .categoria-pesquisa {
+        grid-area: categoria;
+      } */
+
+      /* .data-pesquisa {
+        grid-area: data;
+
+        align-items: flex-end;
+      }
+     */
+      /* .bt-participa {
+        justify-self: flex-end;
+        align-self: flex-end;
+
+        grid-area: bt;
+
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+        column-gap: 10px;
+
+        align-items: flex-end;
+        justify-content: flex-end;
+
+     */
+        /* h3 {
+          margin: 0;
+        }
+       */
+
+
+
+
 
 

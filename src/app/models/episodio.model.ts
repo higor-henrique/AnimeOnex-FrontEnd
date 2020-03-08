@@ -4,4 +4,5 @@ export class Episodio {
     vizualizacoes: number;
     duracaoMin: number;
     numeroDoEpisodio : number;
+    caminhoDoArquivo: string;
 }

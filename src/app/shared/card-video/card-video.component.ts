@@ -15,4 +15,14 @@ export class CardVideoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  caminhonull(episodio: Episodio) {
+    if(episodio.caminhoDoArquivo == "") {      
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+
 }

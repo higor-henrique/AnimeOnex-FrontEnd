@@ -1,6 +1,17 @@
-<section class ="card-video">
-    <h5>
-       {{ episodio.titulo }}
-    </h5>
-    <p>teste</p> 
-</section>
+<div class ="container-card" >
+    <section class ="card-imagem">       
+        
+        
+        <div *ngIf="caminhonull(episodio)"><img src="assets\imgs\image-not-found-big-768x432.png" width="400" height="250"/>.</div>
+        <!-- <div *ngIf="!caminhonull(episodio)"><img src="assets\imgs\anime.jpg" width="400" height="250"/>.</div> -->
+        <div *ngIf="!caminhonull(episodio)"><img [src]="episodio.caminhoDoArquivo" width="400" height="250"/></div>
+        
+        <h5> Episodio: {{episodio.numeroDoEpisodio}} </h5>
+    </section>
+    <div class="container-titulo">
+    <h4 class ="titulo-episodio">
+        {{ episodio.titulo }}       
+    </h4>
+    </div>
+</div>
+

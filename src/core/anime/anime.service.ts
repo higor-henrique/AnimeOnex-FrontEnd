@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Observable} from 'rxjs';
-import { Anime } from 'src/models/anime.model'
+import { Anime } from 'src/app/models/anime.model'
 import { map } from 'rxjs/operators';
 import { catchError } from 'rxjs/operators';
 

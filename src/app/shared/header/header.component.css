@@ -1,23 +1,27 @@
 
    .spacer {
     flex: 1;
-  } 
+    display: flex;
+    justify-content: around;
+
+  }
 
    .toolbar {
     height: 60px;
     margin: -8px;
     display: flex;
     align-items: center;
-    background-color: #1976d2;
+    background-color: #051d35;
     color: white;
     font-weight: 600;
-  } 
+  }
 
 .toolbar img {
     margin: 0 16px;
   }
 
   .toolbar #twitter-logo {
+    padding-top:10px;
     height: 40px;
     margin: 0 16px;
   }
@@ -25,3 +29,18 @@
   .toolbar #twitter-logo:hover {
     opacity: 0.8;
   }
+
+  .input-buscar {
+    border-radius: 15px;
+    height: 25px;
+    width: 300px;
+    /* background-color: #282f36; */
+    background-color: #181818;
+    border: 0px;
+    
+  }
+  .input-buscar::placeholder {
+    color:gray;
+  }
+    
+

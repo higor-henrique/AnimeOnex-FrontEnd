@@ -1,9 +1,7 @@
-<h3>AnimeOnex</h3>
 
-
-<h5>Últimos vídeos Postados em Lançamento</h5>
+<h5>Últimos Episodios Postados</h5>
 <div class ="ultimos-videos">
     <!-- <app-card-pesquisa *ngFor="let epsidodio of pesquisas"></app-card-pesquisa> -->
-    <app-card-video *ngFor ="let episodio of episodios"></app-card-video>
+    <app-card-video *ngFor ="let episodio of episodios" [episodio]="episodio"></app-card-video>
 </div>
 
