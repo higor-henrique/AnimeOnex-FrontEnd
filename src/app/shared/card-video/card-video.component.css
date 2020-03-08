@@ -18,104 +18,111 @@
     align-items: center;
 
 }
+.card-imagem:hover {
 
+}
 .container-titulo {
     font-family: Robot, Sans-serif;
     display: flex;
     justify-content: center;
 }
 
+
 .card-imagem img {
     border-radius: 20px;
 }
 h5 {
-    position: fixed ;
+    position: absolute;
     align-self: flex-start;
     color: #822bab;
+    text-align: center;
+    width: 250px;
+    line-height: 30px;
+    height: 30px; 
 }  
 
 h4 {
     color: #822bab;
 } 
 
-  /*
-    .card-pesquisa-wrapper {
-      background: #ecf0f1;
-      border-radius: 4px;
 
-      padding: 0.5em;
-      margin: 0.5em;
+/* ------------ SETTINGS ------------ */
 
-      cursor: pointer;
 
-      &:hover {
-        box-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.15);
-      }
 
-      display: grid;
 
-      grid-template-rows: 2fr 3fr auto auto;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 1em;
-      row-gap: 1em;
+/* ------------ CARD ------------ */
 
-      grid-template-areas:
-        "titulo titulo"
-        "descricao descricao"
-        "categoria data"
-        "bt bt";
-    */
-      /* .titulo-episodio
-      {
-         overflow-wrap: break-word; 
-      } */
+
+	
+/* // Play icon */
+.card-play {
+	width: 48px;
+	height: 48px;
+	position: relative;
+	z-index: 1;
+	margin: auto;
+	opacity: 0;
+	background: 'assets\imgs\play.png' center center / cover;
+	cursor: pointer;
+	transition: opacity .3s ease-out;
+}
+
+/* // Animation */
+.card-play:after {
+	content: '';
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: 000;
+	transition: all .5s ease-out;
+}
+	
+	/* // Video */
+.card-imagem {
+	/* display: none;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: 2;
+	background: 000; */
 /* 
-      .titulo-episodio {
-          grid-area: titulo;  
-
-         font-size: 1.5em; 
-
-        margin: 0.125em 0;
-      } */
-
-      /* .descricao-pesquisa {
-        grid-area: descricao;
-
-        font-size: 0.9em;
-      }
-     */
-      /* .categoria-pesquisa {
-        grid-area: categoria;
-      } */
-
-      /* .data-pesquisa {
-        grid-area: data;
-
-        align-items: flex-end;
-      }
-     */
-      /* .bt-participa {
-        justify-self: flex-end;
-        align-self: flex-end;
-
-        grid-area: bt;
-
-        display: grid;
-        align-items: center;
-        grid-auto-flow: column;
-        column-gap: 10px;
-
-        align-items: flex-end;
-        justify-content: flex-end;
-
-     */
-        /* h3 {
-          margin: 0;
-        }
-       */
+	iframe {
+		width: 100%;
+		height: 100%;
+	} */
+}
+	
+.card-imagem:after {
+	content: '';
+	width: 250%;
+	height: 250%;
+	position: absolute;
+	top: var(--y);
+	left: var(--x);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	background: radial-gradient(circle closest-side, rgba(255, 255, 255, .3), transparent);
+	transition: opacity 0.5s ease-out;
+}
 
 
+/* ------------ STATES ------------ */
 
+.card-imagem:hover:after,
+.card-imagem:hover .card-play {
+	opacity: 1;
+}
+
+ .video-is-open:after {
+	display: none;
+}
+
+.video-is-open .card-play {
+	opacity: 1;
+	
+	
+} 
 
 
 

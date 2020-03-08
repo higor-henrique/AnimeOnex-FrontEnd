@@ -1,7 +1,10 @@
-
+<!-- 
 <h5>Últimos Episodios Postados</h5>
-<div class ="ultimos-videos">
+<div class ="ultimos-videos"> -->
     <!-- <app-card-pesquisa *ngFor="let epsidodio of pesquisas"></app-card-pesquisa> -->
-    <app-card-video *ngFor ="let episodio of episodios" [episodio]="episodio"></app-card-video>
-</div>
+    <!--<app-card-video *ngFor ="let episodio of episodios" [episodio]="episodio"></app-card-video>
+</div>-->
 
+
+<app-section-videos [titulo]="'Últimos Episodios Postados'"[episodios]="episodios"></app-section-videos>
+ 

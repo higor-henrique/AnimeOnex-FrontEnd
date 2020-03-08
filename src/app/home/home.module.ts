@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { CardVideoModule } from '../shared/card-video/card-video.module';
+import { SectionVideosModule } from '../shared/section-videos/section-videos.module';
 
 const routes: Routes = [
     {
@@ -15,7 +16,7 @@ const routes: Routes = [
   imports: 
   [CommonModule,
   RouterModule.forChild(routes),
-  CardVideoModule],
+  SectionVideosModule],
   exports:[HomeComponent],
   
 })

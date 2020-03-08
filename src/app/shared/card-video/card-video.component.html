@@ -3,10 +3,9 @@
         
         
         <div *ngIf="caminhonull(episodio)"><img src="assets\imgs\image-not-found-big-768x432.png" width="400" height="250"/>.</div>
-        <!-- <div *ngIf="!caminhonull(episodio)"><img src="assets\imgs\anime.jpg" width="400" height="250"/>.</div> -->
         <div *ngIf="!caminhonull(episodio)"><img [src]="episodio.caminhoDoArquivo" width="400" height="250"/></div>
         
-        <h5> Episodio: {{episodio.numeroDoEpisodio}} </h5>
+        <h5> Ep: {{episodio.numeroDoEpisodio}} </h5>
     </section>
     <div class="container-titulo">
     <h4 class ="titulo-episodio">
