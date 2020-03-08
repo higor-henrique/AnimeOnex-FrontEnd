@@ -9,4 +9,3 @@ import { CardVideoComponent } from './card-video.component';
   exports: [CardVideoComponent]
 })
 export class CardVideoModule {}
-
