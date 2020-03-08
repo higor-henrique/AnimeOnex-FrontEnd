@@ -1,5 +1,5 @@
 
-.ultimos-videos {
+.section-videos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,6 +22,4 @@ h3 {
     font-family: 'Segoe UI', sans-serif;
     color: #FFFFFF;
 }
-
-
 
