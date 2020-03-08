@@ -21,6 +21,7 @@ const routes: Routes = [
   exports:[
     HomeComponent
   ],
+
   
 })
 export class HomeModule {}

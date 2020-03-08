@@ -5,6 +5,7 @@ import { CardVideoModule } from './../card-video/card-video.module'
 
 
 @NgModule({
+
     declarations: 
     [
       SectionVideosComponent
@@ -20,3 +21,4 @@ import { CardVideoModule } from './../card-video/card-video.module'
     ]
   })
 export class SectionVideosModule{}
+

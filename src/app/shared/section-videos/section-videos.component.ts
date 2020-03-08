@@ -10,15 +10,14 @@ export class SectionVideosComponent implements OnInit {
   @Input() episodios: Episodio[];
   @Input() titulo: string;
 
+
   constructor() { }
 
   
 
   ngOnInit(): void {
   
- 
 }
-
 
 
 }
